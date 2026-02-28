@@ -108,8 +108,8 @@ See SUBAGENT-POLICY.md for the full policy. Summary:
 
 ## Model Strategy
 
-- Primary model: anthropic/claude-opus-4-6 (Anthropic Opus 4.6)
-- Subagent model: anthropic/claude-opus-4-6 (Anthropic Opus 4.6)
+- Primary model: anthropic/claude-sonnet-4-6 (Anthropic Sonnet 4.6)
+- Subagent model: anthropic/claude-sonnet-4-6 (Anthropic Sonnet 4.6)
 - Fallback: anthropic/claude-sonnet-4-6 for lightweight tasks
 - Route all LLM calls through the centralized router in shared/llm-router.js
 

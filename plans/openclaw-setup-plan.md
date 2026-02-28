@@ -33,7 +33,7 @@ Kris (kristofmuys) runs his own instance using forked repos.
 - SQLite (WAL mode) for all persistent data, JSONL backups
 - Telegram as primary messaging platform, Slack optional
 - Config: `~/.openclaw/openclaw.json` and `~/.openclaw/.env`
-- Recommended model per upstream README: `anthropic/claude-opus-4-6`
+- Recommended model per upstream README: `anthropic/claude-sonnet-4-6`
 
 ---
 
@@ -41,7 +41,7 @@ Kris (kristofmuys) runs his own instance using forked repos.
 
 ### 1. Model version (all files)
 **Was:** `claude-sonnet-4-5` (wrong model family AND wrong version)
-**Now:** `anthropic/claude-opus-4-6` (correct per upstream OpenClaw README)
+**Now:** `anthropic/claude-sonnet-4-6` (correct per upstream OpenClaw README)
 
 Files updated: `AGENTS.md`, `TOOLS.md`, `SUBAGENT-POLICY.md`, `README.md`,
 `docs/WORKSPACE-FILES.md`
@@ -92,7 +92,7 @@ Minimal `~/.openclaw/openclaw.json` (json5 format):
 ```json5
 {
   agent: {
-    model: "anthropic/claude-opus-4-6",
+    model: "anthropic/claude-sonnet-4-6",
   },
 }
 ```

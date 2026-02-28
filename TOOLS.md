@@ -45,8 +45,8 @@ Stored in ~/.openclaw/.env. See .env.example for the canonical list.
 - **Rule:** Only reply with voice when explicitly asked. Default to text.
 
 ## Model Configuration
-- Primary model: anthropic/claude-opus-4-6 (Anthropic Opus 4.6)
-- Subagent model: anthropic/claude-opus-4-6 (Anthropic Opus 4.6)
+- Primary model: anthropic/claude-sonnet-4-6 (Anthropic Sonnet 4.6)
+- Subagent model: anthropic/claude-sonnet-4-6 (Anthropic Sonnet 4.6)
 - Fallback model: anthropic/claude-sonnet-4-6 (Anthropic)
 - Gateway port: 18789
 - Gateway mode: local (loopback only)

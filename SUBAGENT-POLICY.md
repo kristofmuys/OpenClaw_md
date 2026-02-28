@@ -57,8 +57,8 @@ you're using. This makes the routing visible.
 Format: [model] via [provider/tool]
 
 Examples:
-- "Spawning a subagent with anthropic/claude-opus-4-6 to search the web."
-- "Delegating to anthropic/claude-opus-4-6 via coding agent CLI."
+- "Spawning a subagent with anthropic/claude-sonnet-4-6 to search the web."
+- "Delegating to anthropic/claude-sonnet-4-6 via coding agent CLI."
 
 Include the model and provider in both the start announcement and the
 completion message if the model used differs from what was initially
@@ -75,7 +75,7 @@ When a subagent fails:
 
 Use OpenClaw's subagent spawning mechanism with:
 - Clear task description
-- Default to anthropic/claude-opus-4-6 for non-coding subagent tasks
+- Default to anthropic/claude-sonnet-4-6 for non-coding subagent tasks
 - Only use a different model if the primary is unavailable or the task
   requires a specialized capability
 - Estimated time if helpful

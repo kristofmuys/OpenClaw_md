@@ -45,7 +45,7 @@ They define how the agent behaves, who it is, and what it knows about the enviro
    ```json5
    {
      agent: {
-       model: "anthropic/claude-opus-4-6",
+       model: "anthropic/claude-sonnet-4-6",
      },
    }
    ```
@@ -56,7 +56,7 @@ They define how the agent behaves, who it is, and what it knows about the enviro
 
 ## Model
 
-Primary model: `anthropic/claude-opus-4-6` (Anthropic Opus 4.6, recommended by OpenClaw)
+Primary model: `anthropic/claude-sonnet-4-6` (Anthropic Claude Sonnet 4.6)
 
 ## Related repos
 
