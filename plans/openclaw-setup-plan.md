@@ -7,8 +7,9 @@
 ## What OpenClaw Is
 
 OpenClaw was created by **Peter Steinberger** (steipete, peter@openclaw.ai), founder of PSPDFKit.
-Website: https://openclaw.ai. Formerly known as Clawdbot, then Moltbot.
+Website: https://openclaw.ai. Full name history: **Warelay -> Clawdbot -> Moltbot -> OpenClaw**.
 Featured in MacStories by Federico Viticci: "OpenClaw Showed Me What the Future of Personal AI Assistants Looks Like."
+Current version: 2026.2.27 (date-based versioning). Very active project with many contributors.
 
 Kris (kristofmuys) runs his own instance using forked repos.
 
