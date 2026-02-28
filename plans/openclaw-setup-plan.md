@@ -11,10 +11,19 @@ Website: https://openclaw.ai. Full name history: **Warelay -> Clawdbot -> Moltbo
 Featured in MacStories by Federico Viticci: "OpenClaw Showed Me What the Future of Personal AI Assistants Looks Like."
 Current version: 2026.2.27 (date-based versioning). Very active project with many contributors.
 
-**Security context:** OpenClaw has documented cases of malicious actors attempting to exploit AI agent platforms
-(prompt injection, malicious skills). This is why the workspace AGENTS.md has extensive security rules.
+**Security context (from trust.openclaw.ai):** OpenClaw has documented cases of malicious actors attempting
+to exploit AI agent platforms (prompt injection, indirect injection, tool abuse, identity risks).
+This is why the workspace AGENTS.md has extensive security rules - they're based on real documented attacks.
 OpenClaw partnered with VirusTotal to scan skills on ClawHub (the skill marketplace).
-Security program: trust.openclaw.ai.
+Security program: trust.openclaw.ai. Security audit: `openclaw security audit --deep`.
+
+**OpenClaw security defaults:**
+- DM Policy: Pairing (unknown senders must complete pairing flow with expiring code)
+- Exec Security: Deny with ask on-miss (dangerous commands require approval)
+- AllowFrom: Self-only by default
+- Session Isolation: Conversations isolated per session key
+- SSRF Protection: Internal IPs and localhost blocked in web_fetch
+- Gateway Auth: Required by default
 
 **MacStories article key facts:**
 - Federico Viticci used Claude Opus 4.5 (not Sonnet) for his setup
