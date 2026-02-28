@@ -38,11 +38,19 @@
 
 ## Project Context
 
-Kris maintains the OpenClaw project and related community repos:
-- `kristofmuys/openclaw` - the main OpenClaw platform
-- `kristofmuys/awesome-openclaw-skills` - community skills catalog
-- `kristofmuys/awesome-openclaw-usecases` - community use cases
-- `kristofmuys/OpenClaw_md` - this workspace (personal OpenClaw config)
+OpenClaw was created by Matt Berman (mberman84). Kris runs his own instance using
+forked repos. His personal workspace config is this repo (`kristofmuys/OpenClaw_md`).
+
+Upstream repos (original, by mberman84):
+- `mberman84/openclaw` - the OpenClaw platform
+- `mberman84/awesome-openclaw-skills` - community skills catalog
+- `mberman84/awesome-openclaw-usecases` - community use cases
+
+Kris's forks:
+- `kristofmuys/openclaw`
+- `kristofmuys/awesome-openclaw-skills`
+- `kristofmuys/awesome-openclaw-usecases`
+- `kristofmuys/OpenClaw_md` - this workspace
 
 ## Operational Lessons
 

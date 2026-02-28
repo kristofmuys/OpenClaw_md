@@ -15,19 +15,19 @@ Skills define how tools work. This file is for lookup values only.
 ## Primary Messaging Platform (Telegram)
 - Group ID: *(set after Telegram group is created)*
 
-| Topic | Thread ID |
-|-------|-----------|
-| Updates | *(set after topic creation)* |
-| Cron Updates | *(set after topic creation)* |
-| Knowledge Base | *(set after topic creation)* |
-| Self-Improvement | *(set after topic creation)* |
-| Dev | *(set after topic creation)* |
-
-## Topic behavior (quick)
-- Cron Updates: cron-owned; respond to follow-ups only
-- Self-Improvement: failures and security alerts only
-- Dev: code discussions, debugging, project updates
-- Updates: general status updates and announcements
+| Topic | Thread ID | Behavior |
+|-------|-----------|----------|
+| Daily Brief | *(set after topic creation)* | cron-owned; respond to follow-ups only |
+| Personal CRM | *(set after topic creation)* | contact queries and follow-up nudges |
+| Email | *(set after topic creation)* | email queries and draft proposals |
+| Knowledge Base | *(set after topic creation)* | KB ingestion and query notifications |
+| Meta-Analysis | *(set after topic creation)* | business advisory council digests |
+| Video Ideas | *(set after topic creation)* | video pitch discussion and feedback |
+| Earnings | *(set after topic creation)* | financial tracking and earnings reports |
+| Cron Updates | *(set after topic creation)* | cron-owned; failures only, success is silent |
+| Financials | *(set after topic creation)* | financial data; never share outside DM or this topic |
+| Health | *(set after topic creation)* | food logging and health tracking |
+| Self-Improvement | *(set after topic creation)* | agent self-improvement and security alerts |
 
 ## Paths
 - Logs: ~/.openclaw/workspace/data/logs/ (unified: all.jsonl)

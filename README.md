@@ -52,6 +52,14 @@ Primary model: `claude-sonnet-4-5` (Anthropic)
 
 ## Related repos
 
-- [kristofmuys/openclaw](https://github.com/kristofmuys/openclaw) - The OpenClaw platform
-- [kristofmuys/awesome-openclaw-skills](https://github.com/kristofmuys/awesome-openclaw-skills) - Community skills
-- [kristofmuys/awesome-openclaw-usecases](https://github.com/kristofmuys/awesome-openclaw-usecases) - Community use cases
+OpenClaw was created by Matt Berman (mberman84). These are Kris's forks:
+
+- [kristofmuys/openclaw](https://github.com/kristofmuys/openclaw) - The OpenClaw platform (fork)
+- [kristofmuys/awesome-openclaw-skills](https://github.com/kristofmuys/awesome-openclaw-skills) - Community skills (fork)
+- [kristofmuys/awesome-openclaw-usecases](https://github.com/kristofmuys/awesome-openclaw-usecases) - Community use cases (fork)
+
+Upstream (original):
+
+- [mberman84/openclaw](https://github.com/mberman84/openclaw) - Original OpenClaw platform
+- [mberman84/awesome-openclaw-skills](https://github.com/mberman84/awesome-openclaw-skills) - Original community skills
+- [mberman84/awesome-openclaw-usecases](https://github.com/mberman84/awesome-openclaw-usecases) - Original community use cases
