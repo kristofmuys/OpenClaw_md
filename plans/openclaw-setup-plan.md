@@ -81,10 +81,10 @@ File updated: `TOOLS.md`
 
 ## Setup Reference
 
-From upstream OpenClaw README:
+From openclaw.ai (recommended):
 
 ```bash
-npm install -g openclaw@latest
+curl -fsSL https://openclaw.ai/install.sh | bash
 openclaw onboard --install-daemon
 ```
 

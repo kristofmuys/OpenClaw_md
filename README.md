@@ -32,7 +32,7 @@ They define how the agent behaves, who it is, and what it knows about the enviro
 
 1. Install OpenClaw and run the onboarding wizard:
    ```bash
-   npm install -g openclaw@latest
+   curl -fsSL https://openclaw.ai/install.sh | bash
    openclaw onboard --install-daemon
    ```
 
