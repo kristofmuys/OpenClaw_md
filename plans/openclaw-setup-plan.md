@@ -1,6 +1,6 @@
 # OpenClaw Workspace Configuration Plan
 
-## Status: Research Complete - Critical Findings Added
+## Status: Research Complete
 
 ---
 
@@ -10,6 +10,18 @@ OpenClaw was created by **Peter Steinberger** (steipete, peter@openclaw.ai), fou
 Website: https://openclaw.ai. Full name history: **Warelay -> Clawdbot -> Moltbot -> OpenClaw**.
 Featured in MacStories by Federico Viticci: "OpenClaw Showed Me What the Future of Personal AI Assistants Looks Like."
 Current version: 2026.2.27 (date-based versioning). Very active project with many contributors.
+
+**Security context:** OpenClaw has documented cases of malicious actors attempting to exploit AI agent platforms
+(prompt injection, malicious skills). This is why the workspace AGENTS.md has extensive security rules.
+OpenClaw partnered with VirusTotal to scan skills on ClawHub (the skill marketplace).
+Security program: trust.openclaw.ai.
+
+**MacStories article key facts:**
+- Federico Viticci used Claude Opus 4.5 (not Sonnet) for his setup
+- He named his agent "Navi" (users name their own agents)
+- OpenClaw runs on M4 Mac mini (local machine)
+- Skills can be created on-the-fly by the agent itself
+- The agent can build things autonomously overnight ("proactive work")
 
 Kris (kristofmuys) runs his own instance using forked repos.
 
