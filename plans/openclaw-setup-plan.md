@@ -88,15 +88,24 @@ npm install -g openclaw@latest
 openclaw onboard --install-daemon
 ```
 
-Minimal `~/.openclaw/openclaw.json`:
-```json
+Minimal `~/.openclaw/openclaw.json` (json5 format):
+```json5
 {
-  "model": "anthropic/claude-opus-4-6"
+  agent: {
+    model: "anthropic/claude-opus-4-6",
+  },
 }
 ```
 
-OAuth setup (Claude Code token):
+API key setup (standard):
+```bash
+# Add to ~/.openclaw/.env:
+ANTHROPIC_API_KEY=sk-ant-...
+```
+
+OAuth setup (Claude Code token, per prompt 23):
 ```bash
 claude login
 # Add CLAUDE_CODE_OAUTH_TOKEN to ~/.openclaw/.env
+# Remove ANTHROPIC_API_KEY if using OAuth-only mode
 ```
