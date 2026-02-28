@@ -1,6 +1,6 @@
 # OpenClaw Workspace Configuration Plan
 
-## Status: Research Complete
+## Status: Research Complete - Critical Findings Added
 
 ---
 
@@ -111,14 +111,60 @@ These are all valid customizations of the official templates.
 
 ---
 
+## Critical Findings from Source Code Research
+
+### 1. MEMORY.md Loading Behavior (INCORRECT in workspace docs)
+
+From `src/agents/workspace.ts` (`filterBootstrapFilesForSession`):
+
+**Actual behavior:**
+- Main sessions (direct chat, group chat): ALL files loaded including MEMORY.md
+- Subagent sessions: Only AGENTS.md, TOOLS.md, SOUL.md, IDENTITY.md, USER.md
+- Cron sessions: Only AGENTS.md, TOOLS.md, SOUL.md, IDENTITY.md, USER.md
+
+**What workspace docs claim:**
+- `docs/WORKSPACE-FILES.md`: "Direct chats with Kris only. Excluded from group/shared contexts"
+- `AGENTS.md`: "Only load in direct/private chats"
+- `MEMORY.md`: "Only loaded in private/direct chats with Kris. Never in group contexts."
+
+**The truth:** MEMORY.md is loaded in ALL main sessions, including group chats. The "private chat only" behavior is NOT enforced by OpenClaw's code. It's just an instruction to the agent. The agent must follow this instruction itself.
+
+This means the MEMORY.md privacy claim is aspirational, not technical. The agent is instructed to not reference MEMORY.md in group contexts, but the file IS loaded.
+
+### 2. SUBAGENT-POLICY.md is Not a Standard OpenClaw File
+
+OpenClaw does not load SUBAGENT-POLICY.md. It's not in the workspace file constants. The workspace AGENTS.md references it ("See SUBAGENT-POLICY.md for the full policy") but OpenClaw won't load it automatically.
+
+If this file is needed, its content should be merged into AGENTS.md, or it should be added to the `agents.bootstrap.extra` config to be loaded explicitly.
+
+### 3. docs/WORKSPACE-FILES.md is Not Loaded by OpenClaw
+
+This file is not in the workspace file constants. It's documentation for humans, not for the agent. It does NOT get loaded into the system prompt.
+
+### 4. File Loading Order (from source)
+
+Main sessions load in this order:
+1. AGENTS.md
+2. SOUL.md
+3. TOOLS.md
+4. IDENTITY.md
+5. USER.md
+6. HEARTBEAT.md
+7. BOOTSTRAP.md (if exists)
+8. MEMORY.md (if exists)
+
+---
+
 ## Potential Further Improvements (Not Yet Done)
 
 These are observations from comparing with official templates. Not making changes without direction.
 
 1. **AGENTS.md**: Missing group chat reaction guidance, voice storytelling, platform formatting rules (Discord/WhatsApp no markdown tables), heartbeat proactivity guidance, cron vs heartbeat decision guide. The official template has much richer guidance.
 
-2. **SUBAGENT-POLICY.md**: This file doesn't exist in the official templates. OpenClaw handles subagents natively. This file may be unnecessary or could be merged into AGENTS.md.
+2. **SUBAGENT-POLICY.md**: Not loaded by OpenClaw. Content should be in AGENTS.md or added to `agents.bootstrap.extra` config.
 
-3. **docs/WORKSPACE-FILES.md**: This is a custom doc not in the official templates. It's useful but adds token cost.
+3. **docs/WORKSPACE-FILES.md**: Not loaded by OpenClaw. Documentation only.
 
 4. **BOOTSTRAP.md**: Should be deleted after first session completes (per its own instructions).
+
+5. **MEMORY.md privacy claim**: The "private chat only" claim is aspirational, not technical. The agent must enforce this itself via its instructions.
