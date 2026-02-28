@@ -30,21 +30,29 @@ They define how the agent behaves, who it is, and what it knows about the enviro
 
 ## Setup
 
-1. Clone this repo into your OpenClaw workspace:
+1. Install OpenClaw and run the onboarding wizard:
+   ```bash
+   npm install -g openclaw@latest
+   openclaw onboard --install-daemon
+   ```
+
+2. Clone this repo as your workspace:
    ```bash
    git clone https://github.com/kristofmuys/OpenClaw_md.git ~/.openclaw/workspace
    ```
 
-2. Or configure OpenClaw to use this directory:
-   ```json
-   { "agent": { "workspace": "/path/to/OpenClaw_md" } }
+3. Configure `~/.openclaw/openclaw.json` with the model:
+   ```json5
+   {
+     agent: {
+       model: "anthropic/claude-opus-4-6",
+     },
+   }
    ```
 
-3. Update `TOOLS.md` with your actual Telegram group ID and topic IDs.
+4. Update `TOOLS.md` with your actual Telegram group ID and topic IDs.
 
-4. Update `USER.md` with your actual email and timezone.
-
-5. Run `openclaw onboard` if you haven't already.
+5. Update `USER.md` with your actual email.
 
 ## Model
 

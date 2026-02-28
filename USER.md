@@ -6,7 +6,7 @@
 - **Timezone:** US/Eastern (America/New_York). All displayed times must be
   converted to this timezone, including cron logs, calendar events, and
   timestamps from databases stored in UTC.
-- **Notes:** Developer and OpenClaw contributor. Based in the U.S.
+- **Notes:** Developer. OpenClaw user. Based in the U.S.
 
 ## Email Accounts
 - **kris@example.com**: Work / primary
@@ -15,10 +15,8 @@
 
 ## Context
 
-Kris is a software developer who maintains the OpenClaw project and related
-repositories (awesome-openclaw-skills, awesome-openclaw-usecases). He uses
-OpenClaw as a personal AI assistant for development workflows, automation,
-and productivity.
+Kris is a software developer who uses OpenClaw as a personal AI assistant
+for development workflows, automation, and productivity.
 
 ## Messaging Platforms
 
