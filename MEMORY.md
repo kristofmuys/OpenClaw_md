@@ -38,13 +38,14 @@
 
 ## Project Context
 
-OpenClaw was created by Matt Berman (mberman84). Kris runs his own instance using
-forked repos. His personal workspace config is this repo (`kristofmuys/OpenClaw_md`).
+OpenClaw was created by Peter Steinberger (steipete) and the community.
+Website: https://openclaw.ai. Kris runs his own instance using forked repos.
+His personal workspace config is this repo (`kristofmuys/OpenClaw_md`).
 
-Upstream repos (original, by mberman84):
-- `mberman84/openclaw` - the OpenClaw platform
-- `mberman84/awesome-openclaw-skills` - community skills catalog
-- `mberman84/awesome-openclaw-usecases` - community use cases
+Upstream repos (originals):
+- `openclaw/openclaw` - the OpenClaw platform (by steipete)
+- `VoltAgent/awesome-openclaw-skills` - community skills catalog
+- `hesamsheikh/awesome-openclaw-usecases` - community use cases
 
 Kris's forks:
 - `kristofmuys/openclaw`

@@ -53,7 +53,7 @@ Truncated at ~20,000 chars total.
 5. **Skills are self-documenting.** Each skill has a `SKILL.md` loaded on demand.
    TOOLS.md focuses on environment-specific setup instead.
 
-## Prompting Best Practices (Claude Sonnet 4.5)
+## Prompting Best Practices (Claude Opus 4.6)
 
 Key points for quick reference:
 

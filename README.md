@@ -48,18 +48,15 @@ They define how the agent behaves, who it is, and what it knows about the enviro
 
 ## Model
 
-Primary model: `claude-sonnet-4-5` (Anthropic)
+Primary model: `anthropic/claude-opus-4-6` (Anthropic Opus 4.6, recommended by OpenClaw)
 
 ## Related repos
 
-OpenClaw was created by Matt Berman (mberman84). These are Kris's forks:
+OpenClaw was created by Peter Steinberger (steipete) and the community.
+See [openclaw.ai](https://openclaw.ai).
 
-- [kristofmuys/openclaw](https://github.com/kristofmuys/openclaw) - The OpenClaw platform (fork)
-- [kristofmuys/awesome-openclaw-skills](https://github.com/kristofmuys/awesome-openclaw-skills) - Community skills (fork)
-- [kristofmuys/awesome-openclaw-usecases](https://github.com/kristofmuys/awesome-openclaw-usecases) - Community use cases (fork)
+Kris's forks:
 
-Upstream (original):
-
-- [mberman84/openclaw](https://github.com/mberman84/openclaw) - Original OpenClaw platform
-- [mberman84/awesome-openclaw-skills](https://github.com/mberman84/awesome-openclaw-skills) - Original community skills
-- [mberman84/awesome-openclaw-usecases](https://github.com/mberman84/awesome-openclaw-usecases) - Original community use cases
+- [kristofmuys/openclaw](https://github.com/kristofmuys/openclaw) - The OpenClaw platform (fork of [openclaw/openclaw](https://github.com/openclaw/openclaw))
+- [kristofmuys/awesome-openclaw-skills](https://github.com/kristofmuys/awesome-openclaw-skills) - Community skills (fork of [VoltAgent/awesome-openclaw-skills](https://github.com/VoltAgent/awesome-openclaw-skills))
+- [kristofmuys/awesome-openclaw-usecases](https://github.com/kristofmuys/awesome-openclaw-usecases) - Community use cases (fork of [hesamsheikh/awesome-openclaw-usecases](https://github.com/hesamsheikh/awesome-openclaw-usecases))
